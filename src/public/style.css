@@ -849,8 +849,17 @@ video {
   grid-template-columns: repeat(9, minmax(0, 1fr));
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .gap-4 {
   gap: 1rem;
+}
+
+.divide-amber-700 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(180 83 9 / var(--tw-divide-opacity));
 }
 
 .overflow-y-scroll {
@@ -1228,6 +1237,22 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
+}
+
+.duration-75 {
+  transition-duration: 75ms;
+}
+
+.duration-\[80\] {
+  transition-duration: 80;
+}
+
+.duration-150 {
+  transition-duration: 150ms;
 }
 
 .ease-linear {
